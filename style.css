@@ -36,6 +36,7 @@ body{
      color:var(--verde)
 }
 
+
 .botao{
      font-family:"crakra petch", sans-serif ;
      background-color: var(--bota-inativo);
@@ -47,17 +48,35 @@ body{
      align-items: center;
      width: 100%;
      border-bottom: 4px solid var(--botao-ativo);
-     border-left: 4px solid var(--botao-ativo);
-     border-right: 4px solid var(--botao-ativo);
+     border-left: 2px solid var(--botao-ativo);
+     border-right: 2px solid var(--botao-ativo);
      border-top:none;
+}
+
+.botao:first-child{
+     border-radius: 40px 40px 0 0;
 }
 
 .botaos{
   display: block;
 }
-@media screen (min-width: 768px) {
+
+.ativo{
+     background-color: var(--botao-ativo);
+     border-bottom: 4px solid var (--verde);
+}
+
+@media screen  and (min-width: 768px) {
   .botaos{
      display:flex;}
-  
-  
 }
+
+.botao:first-child{
+     border-radius: 40px 0 0 0;
+}
+
+.botao:last-child{
+     border-radius: 0 40px 0 0;
+}
+
+
